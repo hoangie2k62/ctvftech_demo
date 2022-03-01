@@ -1,0 +1,16 @@
+demo\enums\WorkStatus.class
+demo\api\WorksAPI.class
+demo\database\MyDatabaseDialect.class
+demo\utils\DataUtils.class
+demo\filter\APIFilter.class
+demo\utils\AttributeUtils.class
+demo\entity\relationship\WorkAssginEntity.class
+demo\entity\relationship\WorkAssginKey.class
+demo\enums\GioiTinh.class
+demo\enums\JobTitle.class
+demo\beans\Work.class
+demo\main\Application.class
+demo\entity\EmployeesEntity.class
+demo\entity\LoginInfosEntity.class
+demo\entity\OfficesEntity.class
+demo\entity\WorksEntity.class

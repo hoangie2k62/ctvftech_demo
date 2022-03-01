@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence_2_1.xsd">
+
+	<persistence-unit name="ctvftech_demo"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		
+		<class>demo.entity.WorksEntity</class>
+		<class>demo.entity.OfficesEntity</class>
+		<class>demo.entity.EmployeesEntity</class>
+		<class>demo.entity.LoginInfosEntity</class>
+		<class>demo.entity.relationship.WorkAssginEntity</class>
+		<class>demo.entity.relationship.WorkAssginKey</class>
+
+		<properties>
+
+			<property name="javax.persistence.jdbc.driver"
+				value="com.mysql.cj.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:4408/ctvftech_demo?useUnicode=yes&amp;characterEncoding=UTF-8" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password"
+				value="thaibinh" />
+			
+			<!-- 
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+			-->
+			
+			<property name="hibernate.dialect"
+				value="demo.database.MyDatabaseDialect" />
+
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.use_sql_comments" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
