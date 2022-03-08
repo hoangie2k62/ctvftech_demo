@@ -1,6 +1,0 @@
-To do list
-
-- Hiển thị danh sách việc cần làm
-- Tạo một công việc
-- Xóa 1 công việc ra khỏi list
-- Chỉnh sửa một công việc
